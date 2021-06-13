@@ -20,6 +20,9 @@ class CreateOrdersTable extends Migration
             $table->string('title');
             $table->date('arrival_date');
             $table->string('memo');
+            $table->integer('flg');
+            $table->integer('quantity');
+            $table->string('vendor');
             $table->timestamps();
         });
     }
